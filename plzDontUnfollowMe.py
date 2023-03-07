@@ -38,8 +38,8 @@ except FileNotFoundError:
     followings = [followee.username for followee in profile.get_followees()]
 
     instaData = {
-    "followers" : followers,
-    "followings" : followings
+        "followers" : followers,
+        "followings" : followings
     }
 
     with open("data.json", "w") as data_file:
